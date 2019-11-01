@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseNames.cs" />
+    <Compile Include="Pizza.cs" />
+    <Compile Include="PizzaBase.cs" />
     <Compile Include="PizzaTopping.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

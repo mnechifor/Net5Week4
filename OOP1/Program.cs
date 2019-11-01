@@ -11,12 +11,16 @@ namespace OOP1
         static void Main(string[] args)
         {
 
-            PizzaTopping topping = new PizzaTopping();
+            PizzaTopping topping = new PizzaTopping {Name = ToppingNames.Meat};
 
-            topping.Name = ToppingNames.Cheese;
+            PizzaBase pizzaBase = new PizzaBase(BaseNames.Regular);
 
+            Pizza pizza = new Pizza(pizzaBase, "Pizza mea");
 
-            Console.WriteLine(topping.Cost);
+            pizza.AddTopping(topping);
+            pizza.AddTopping(topping);
+
+            pizza.Print();
         }
 
         private void EnumTests()

@@ -46,5 +46,17 @@ namespace OOP1
         {
             get { return prices[this.Name]; }
         }
+
+        public void Print()
+        {
+            string toppingName = this.Name.ToString();
+
+            if (Name == ToppingNames.Meat)
+            {
+                toppingName = this.Name.ToString().ToUpper();
+            }
+          
+           Console.WriteLine($"\t{toppingName} (${this.Cost})");
+        }
     }
 }
