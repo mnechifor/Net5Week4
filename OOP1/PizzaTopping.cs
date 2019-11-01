@@ -20,6 +20,7 @@ namespace OOP1
                 {ToppingNames.Cheese, 20}, 
                 {ToppingNames.Meat, 15}, 
                 {ToppingNames.Vegetable, 18}
+
             };
         }
 
